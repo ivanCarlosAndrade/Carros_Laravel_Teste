@@ -17,3 +17,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/teste',[carroController::class, 'index']);
+Route::post ('/resgistar',[carroController::class, 'store']);
