@@ -1,0 +1,38 @@
+* 
+  /* Event create page */
+  #event-create-container {
+    padding: 30px
+  }
+  
+  #event-create-container label {
+    font-weight: bold;
+    margin: 10px;
+  }
+  
+  #event-create-container input,
+  #event-create-container select,
+  #event-create-container textarea {
+    font-size: 15px;
+  }
+  
+  /* footer */
+  footer {
+    text-align: center;
+    background-color: #353E48;
+    color: #FFF;
+    padding: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  footer p {
+    margin-bottom: 0;
+  }
+  .btn-primary{
+    margin-top: 5%;
+    margin-left: 16%;
+    position: absolute;
+    width:200px;
+
+  }
