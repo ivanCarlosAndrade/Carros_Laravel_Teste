@@ -16,5 +16,11 @@ use App\Http\Controllers\carroController;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/teste',[carroController::class, 'index']);
+
+Route::get('/teste', function () {
+    return view('teste');
+});
+Route::get('/',[carroController::class, 'index']);
+Route::get('/detalhe/{id}',[carroController::class, 'show']);
+
 Route::post ('/resgistar',[carroController::class, 'store']);

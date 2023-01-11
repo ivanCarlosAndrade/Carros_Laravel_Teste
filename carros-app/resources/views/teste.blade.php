@@ -6,7 +6,7 @@
 
 <div id="event-create-container" class="col-md-6 offset-md-3">
   <h1>Registre o seu Carro</h1>
-  <form action="/resgistar" method="POST">
+  <form action="/resgistar" method="POST" enctype="multipart/form-data">
     @csrf
     <div class="form-group">
       <label for="title">Marca:</label>
@@ -28,8 +28,12 @@
       </select>
     </div>
     <div class="form-group">
+      <label for="title">Contacto</label>
+      <input type="number" class="form-control" id="contacto" name="contacto" placeholder="Insira o seu contacto">
+    </div>
+    <div class="form-group">
       <label for="title">Kilometragem do veículo</label>
-      <input type="text" class="form-control" id="kilometragem" name="kilometragem" placeholder="Quantos Km o veiculo já andou">
+      <input type="number" class="form-control" id="kilometragem" name="kilometragem" placeholder="Quantos Km o veiculo já andou">
     </div>
     <div class="form-group">
       <label for="title">Descrição:</label>

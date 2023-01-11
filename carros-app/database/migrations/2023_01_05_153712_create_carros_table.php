@@ -21,6 +21,7 @@ return new class extends Migration
             $table->string('ilha');
             $table->text('Descricao');
             $table->integer('kilometragem');
+            $table->integer('Contacto');
             $table->timestamps();
         });
        
